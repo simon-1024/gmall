@@ -30,6 +30,7 @@ public class CatagoryController {
        List<PmsBaseCatalog1>  pmsBaseCatalog1s = catagoryServie.getCatalog1();
 
        return pmsBaseCatalog1s;
+
    }
 
 
@@ -44,6 +45,7 @@ public class CatagoryController {
         List<PmsBaseCatalog2>  pmsBaseCatalog2s = catagoryServie.getCatalog2(catalog1Id);
 
         return pmsBaseCatalog2s;
+
     }
 
 
@@ -58,7 +60,7 @@ public class CatagoryController {
         List<PmsBaseCatalog3>  pmsBaseCatalog3s = catagoryServie.getCatalog3(catalog2Id);
 
         return pmsBaseCatalog3s;
-    }
 
+    }
 
 }

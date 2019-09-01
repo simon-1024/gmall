@@ -9,10 +9,13 @@ import com.simon.gmall.manage.mapper.PmsBaseCatalog2Mapper;
 import com.simon.gmall.manage.mapper.PmsBaseCatalog3Mapper;
 import com.simon.gmall.service.CatagoryServie;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
 
 @Service
+@Transactional
 public class CatagoryServiceImpl implements CatagoryServie {
 
 
@@ -47,5 +50,6 @@ public class CatagoryServiceImpl implements CatagoryServie {
         pmsBaseCatalog3.setCatalog2Id(catalog2Id);
         List<PmsBaseCatalog3> pmsBaseCatalog3s = pmsBaseCatalog3Mapper.select(pmsBaseCatalog3);
         return pmsBaseCatalog3s;
+
     }
 }
